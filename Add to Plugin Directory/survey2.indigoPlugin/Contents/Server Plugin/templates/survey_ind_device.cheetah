@@ -23,7 +23,7 @@
                 <center>$device_info.address</center>
                 <br>
                 <center>Firmware</center>
-                <center>$hex($device_info.version)</center>
+                <center>$device_info.version</center>
             </td>
             <td rowspan=2 width="60%" align=center>
             <div id="$device_info.address"></div>
@@ -40,8 +40,8 @@
               ymax:3,
               ymin:0,
               labels: ['Response Time']
-            });    
-            </script>        
+            });
+            </script>
             </td>
         </tr>
         <tr>
@@ -65,7 +65,7 @@
                     <TD align=center><font color="$font_color">$loop</font></td>
                     <td align=center><font color="$font_color">$ping_results["passes"][$loop] Milliseconds</font></td>
                     <td align=center><font color="$font_color">$hops($ping_results["passes"][$loop])</font></td>
-                </tr>        
+                </tr>
             #end for
             </table>
             <hr width="90%">

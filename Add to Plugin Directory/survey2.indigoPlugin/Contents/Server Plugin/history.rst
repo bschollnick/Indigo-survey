@@ -1,14 +1,18 @@
+v2.22 (2018-12-30)
+++++++++++++++++++
+* Removed HEX encoding in Individual Device Templates
+
 v2.21 (2014-07-03)
 ++++++++++++++++++
 * Fixed issue where pinging a Plugin device could cause a problem with the HA Interface.
 * Fixed ZWave survey bug
+* Added code to deal with Zwave subdevices
 
 v2.20 (2014-06-30)
 ++++++++++++++++++
 * Fixed percentage errors with Fanlincs
 * Added code to deal with Zwave subdevices
 * First version to support ZWave devices
-
 
 2.10 (2014-06-27)
 +++++++++++++++++
@@ -40,4 +44,4 @@ v2.20 (2014-06-30)
 2.00 (2014-06-19)
 +++++++++++++++++
 * First general release of v2.00
-* Now supports actually pinging the devices, and generating a health rating based off the Pings. 
+* Now supports actually pinging the devices, and generating a health rating based off the Pings.

@@ -1,0 +1,1 @@
+Fixed issue where pinging a Plugin device could cause a problem with the HA Interface.

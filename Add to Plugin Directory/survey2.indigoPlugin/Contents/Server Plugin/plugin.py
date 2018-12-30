@@ -192,9 +192,10 @@ class Plugin(indigo.PluginBase):
     def gather_data(self, model=None, number_of_passes=1):
         self.clear_data()
         start_time = time.time()
+        #models_to_ignore = ["TriggerLinc", "RemoteLinc"]
         for survey_pass in range(1, number_of_passes + 1):
             indigo.server.log("Survey Pass - %s" % survey_pass)
-            for device in indigo.devices.iter():
+            for device in indigo.devices.iter():#"indigo.insteon"):
                 reply = None
 
                 if device.supportsStatusRequest != True:
@@ -258,7 +259,6 @@ class Plugin(indigo.PluginBase):
 
                 else:
                     reply = None
-                    self.sleep (2)
                     indigo.server.waitUntilIdle()
                     result = indigo.device.ping (device, suppressLogging=True)
                     if result["Success"]:

@@ -3,6 +3,11 @@ Generally that means that any battery powered Insteon device will not be tested 
 
 Changes
 
+v2.22 (2018-12-30)
+++++++++++++++++++
+* Removed Hex encoding on the individual device pages
+
+
 v2.21 (2014-07-03)
 ++++++++++++++++++
 * Fixed issue where pinging a Plugin device could cause a problem with the HA Interface.
