@@ -1,3 +1,7 @@
+# Retired 
+
+As I mentioned, I have not been running Indigo for several years.  So I will not be updating this code at this time.
+
 # Indigo-survey
 The Insteon &amp; Zwave Ping Utility.  A relatively painless way to assess your Home Automation Network.
 
